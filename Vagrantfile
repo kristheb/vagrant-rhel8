@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
   # Disable guest additions check, because at this point the VM 
   # will not be registered with RHEL via subsctiption-manager 
   # and yum install <anything> will not work.
-  config.vbguest.auto_update = false
+  # config.vbguest.auto_update = false
 
   config.vm.provider "virtualbox" do |vb|
     vb.cpus = 2
